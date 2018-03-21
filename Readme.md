@@ -13,9 +13,16 @@ To enter the container:
 `docker exec -it 2f /bin/sh`
 
 
+# Todo (prioritario)
+[] Deploy in pro "manuale"
+[] CI/CD
+[] DB
+[] Gestione sessioni
+[] Gestione properites per gli ambienti
+
 --------------
 Cose fatte:
 
 Per tomcat dobbiamo:
  - estendere SparkApplication e implementare init() (http://sparkjava.com/documentation#other-web-server)
- - creare un web.xml
+ - creare un web.xml adatto
