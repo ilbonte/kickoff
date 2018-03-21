@@ -15,9 +15,9 @@ class Hello : SparkApplication {
         }
 
         Spark.get("/hello"
-        ) { request: Request, response: Response -> "com.bonte.kickoffkata.Hello World!" }
+        ) { request: Request, response: Response -> "Hello World!" }
 
         Spark.get("/hello/:name"
-        ) { request: Request, response: Response -> String.format("com.bonte.kickoffkata.Hello, %s!", request.params(":name")) }
+        ) { request: Request, response: Response -> String.format("Hello, %s!", request.params(":name")) }
     }
 }
