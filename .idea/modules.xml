@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kick-off-kata.iml" filepath="$PROJECT_DIR$/.idea/modules/kick-off-kata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kick-off-kata_main.iml" filepath="$PROJECT_DIR$/.idea/modules/kick-off-kata_main.iml" group="kick-off-kata" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kick-off-kata_test.iml" filepath="$PROJECT_DIR$/.idea/modules/kick-off-kata_test.iml" group="kick-off-kata" />
+    </modules>
+  </component>
+</project>
