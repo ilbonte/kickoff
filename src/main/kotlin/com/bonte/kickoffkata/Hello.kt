@@ -10,7 +10,7 @@ class Hello : SparkApplication {
 
         Spark.get("/"
         ) { request: Request, response: Response ->
-            response.redirect("/sparkServletExample/hello")
+            response.redirect("/hello")
             null
         }
 
