@@ -13,7 +13,7 @@ To enter the container:
 `docker exec -it 2f /bin/sh`
 
 
-# Todo (prioritario)
+# Todo
 [] Deploy in pro "manuale"
 [] CI/CD
 [] DB
