@@ -26,3 +26,7 @@ Cose fatte:
 Per tomcat dobbiamo:
  - estendere SparkApplication e implementare init() (http://sparkjava.com/documentation#other-web-server)
  - creare un web.xml adatto
+
+Aggiunto travis:
+ - yml
+ - account sul sito travis e attivato repo
