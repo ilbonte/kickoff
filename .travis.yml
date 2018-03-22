@@ -15,4 +15,6 @@ before_install:
 script:
   - docker build -t bonte/kickoffkata .
   - docker run --rm=true -d -p 8081:8080 bonte/kickoffkata
+  - sleep 5
+  - curl -v --fail http://localhost:8081/kick-off-kata-1.0-SNAPSHOT/hello
   - curl -s http://localhost:8081/kick-off-kata-1.0-SNAPSHOT/hello | grep -a "Hello World!"
