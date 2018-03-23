@@ -9,15 +9,15 @@ class Hello : SparkApplication {
     override fun init() {
 
         Spark.get("/"
-        ) { request: Request, response: Response ->
+        ) { _: Request, response: Response ->
             response.redirect("/hello")
             null
         }
 
         Spark.get("/hello"
-        ) { request: Request, response: Response -> "Hello World!" }
+        ) { _: Request, _: Response -> MySQLDatabaseExampleKotlin.executeMySQLQuery() }
 
         Spark.get("/hello/:name"
-        ) { request: Request, response: Response -> String.format("Hello, %s!", request.params(":name")) }
+        ) { request: Request, _: Response -> String.format("Hello, %s!", request.params(":name")) }
     }
 }

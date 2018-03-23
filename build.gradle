@@ -23,6 +23,8 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     compile 'com.sparkjava:spark-kotlin:1.0.0-alpha'
     compile "com.sparkjava:spark-core:2.6.0"
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.9-rc'
+
 }
 
 compileKotlin {
