@@ -5,7 +5,7 @@ services:
     ports:
      - "8081:8080"
   mysql:
-    image: "mysql:8"
+    image: "mysql:5.7"
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: my-secret-pw

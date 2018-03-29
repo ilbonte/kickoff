@@ -30,3 +30,7 @@ Per tomcat dobbiamo:
 Aggiunto travis:
  - yml
  - account sul sito travis e attivato repo
+
+
+DB:
+ - aggiunto mysql
