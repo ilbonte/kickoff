@@ -4,10 +4,21 @@ services:
     build: .
     ports:
      - "8081:8080"
-  mysql:
+    depends_on:
+     - "db"
+  db:
     image: "mysql:5.7"
+    ports:
+      - "3306:3306"
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: my-secret-pw
       MYSQL_USER: bonte
       MYSQL_PASSWORD: bonte
+  migrate:
+    image: boxfuse/flyway
+    command: -url=jdbc:mysql://db -schemas=myschema -user=root -password=my-secret-pw migrate
+    volumes:
+      - .:/flyway/sql
+    depends_on:
+      - db

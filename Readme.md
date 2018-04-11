@@ -14,9 +14,12 @@ To enter the container:
 
 
 # Todo
+[] DB
+    [] migrazioni
+    [] variabili d'ambiente
+    [] framework?
 [] Deploy in pro "manuale"
 [] CI/CD
-[] DB
 [] Gestione sessioni
 [] Gestione properites per gli ambienti
 

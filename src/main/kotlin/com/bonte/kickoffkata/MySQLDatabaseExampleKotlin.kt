@@ -9,8 +9,8 @@ import java.util.Properties
 object MySQLDatabaseExampleKotlin {
 
     internal var conn: Connection? = null
-    internal var username = "bonte" // provide the username
-    internal var password = "bonte" // provide the corresponding password
+    internal var username = "root" // provide the username
+    internal var password = "my-secret-pw" // provide the corresponding password
 
     @JvmStatic fun main(args: Array<String>) {
         // make a connection to MySQL Server
@@ -20,7 +20,7 @@ object MySQLDatabaseExampleKotlin {
     }
 
     fun executeMySQLQuery(): String {
-        var result = ""
+        var result = "rdy! "
         var stmt: Statement? = null
         var resultset: ResultSet? = null
 
@@ -67,7 +67,7 @@ object MySQLDatabaseExampleKotlin {
                 conn = null
             }
 
-            return result
+            return "yooo "+result
         }
     }
 
@@ -84,7 +84,7 @@ object MySQLDatabaseExampleKotlin {
             Class.forName("com.mysql.jdbc.Driver").newInstance()
             conn = DriverManager.getConnection(
                     "jdbc:" + "mysql" + "://" +
-                            "127.0.0.1" +
+                            "db" +
                             ":" + "3306" + "/" +
                             "",
                     connectionProps)
